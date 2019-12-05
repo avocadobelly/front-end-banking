@@ -1,8 +1,1 @@
-import React from 'react';
-
-class GetAccounts extends React.Component {
-
-
-}
-
-export default GetAccounts;
+import React, {useState, useEffect} from 'react';
