@@ -1,5 +1,6 @@
 import React from "react";
 import useGetAccounts from "./GetAccounts";
+import Navbar from "../nav/Nav";
 
 function Accounts() {
     const accounts = useGetAccounts()
@@ -10,8 +11,11 @@ function Accounts() {
         </div>
     );
     return (
-        <div className={"accounts"}>
-            { accountElements }
+        <div>
+            <Navbar></Navbar>
+            <div className={"accounts"}>
+                { accountElements }
+            </div>
         </div>
     );
 }
