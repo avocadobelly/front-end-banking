@@ -1,8 +1,8 @@
 import React from "react";
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Accounts from "./accounts/Accounts";
-import App from "./App";
 import PageNotFound from "./pageNotFound/PageNotFound";
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Home from "./Home";
 
 
 class Routing extends React.Component {
@@ -10,7 +10,7 @@ class Routing extends React.Component {
         return(
             <Router>
                 <Switch>
-                    <Route exact path="/" component={App}/>
+                    <Route exact path="/" component={Home}/>
                     <Route path="/accounts" component={Accounts}/>
                     <Route component={PageNotFound}/>
                 </Switch>
