@@ -8,7 +8,7 @@ function useGetAccounts() {
             .then((data)=>{
                 setAccounts(data)
             })
-    })
+    }, [])
     return accounts;
 }
 
