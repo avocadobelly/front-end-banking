@@ -2,7 +2,7 @@ import React from "react";
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Accounts from "./accounts/Accounts";
 import PageNotFound from "./pageNotFound/PageNotFound";
-import Home from "./Home";
+import Home from "./Home/Home";
 
 
 class Routing extends React.Component {

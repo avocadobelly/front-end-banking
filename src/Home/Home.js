@@ -1,12 +1,13 @@
 import React from 'react';
-import Navbar from "./nav/Nav";
+import Navbar from "../nav/Nav";
+import WelcomeScreen from "./Welcome/WelcomeScreen";
 
 class Home extends React.Component {
     render() {
         return(
             <div>
                 <Navbar></Navbar>
-                <h1>WELCOME TO THE APP</h1>
+                <WelcomeScreen></WelcomeScreen>
             </div>
 
         )
