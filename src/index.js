@@ -6,7 +6,7 @@ import useGetAccounts from "./GetAccounts";
 function App() {
     const accounts = useGetAccounts()
     const accountElements = accounts.map((account) =>
-        <p>{account.accountHolder}</p>
+        <div><h1>Account Holder:{account.accountHolder}</h1><h2>Balance:£{account.balance.$numberDecimal}</h2></div>
     );
     return (
         <div className="App">
