@@ -13,7 +13,7 @@ function Accounts() {
     return (
         <div>
             <Navbar></Navbar>
-            <div className={"accounts"}>
+            <div>
                 { accountElements }
             </div>
         </div>
