@@ -4,13 +4,15 @@ import useGetAccounts from "./GetAccounts";
 function Accounts() {
     const accounts = useGetAccounts()
     const accountElements = accounts.map((account) =>
-        <div className={"accounts"}>
+        <div>
             <h1>Account Holder:{account.accountHolder}</h1>
             <h2>Balance:£{account.balance.$numberDecimal}</h2>
         </div>
     );
     return (
+        <div className={"accounts"}>
             { accountElements }
+        </div>
     );
 }
 
