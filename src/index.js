@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import useGetAccounts from "./GetAccounts";
+
+function App() {
+    const accounts = useGetAccounts()
+    const accountElements = accounts.map((account) =>
+        <div>
+            <h1>Account Holder:{account.accountHolder}</h1>
+            <h2>Balance:£{account.balance.$numberDecimal}</h2>
+        </div>
+    );
+    return (
+        <div className="App">
+            { accountElements }
+        </div>
+    );
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
