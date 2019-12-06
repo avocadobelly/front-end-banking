@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Accounts from "./Accounts";
+import Accounts from "./accounts/Accounts";
 import App from "./App";
-import PageNotFound from "./PageNotFound";
+import PageNotFound from "./pageNotFound/PageNotFound";
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 
